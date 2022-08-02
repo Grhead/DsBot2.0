@@ -2,7 +2,7 @@
 
 DiscordConfiguration DSConf = new DiscordConfiguration()
 {
-    Token = Environment.GetEnvironmentVariable("LORDBOTTOKEN"),
+    Token = Environment.GetEnvironmentVariable("TOKENVAR"),
     TokenType = TokenType.Bot
 };
 
@@ -12,8 +12,6 @@ static async Task MainAsync(DiscordConfiguration DSConf)
     var discord = new DiscordClient(DSConf);
     await discord.ConnectAsync();
     await Task.Delay(-1);
-
-
 }
 
 
