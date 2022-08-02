@@ -23,5 +23,4 @@ static async Task MainAsync(DiscordConfiguration DSConf)
     await Task.Delay(-1);
 }
 
-
 MainAsync(DSConf).GetAwaiter().GetResult();
