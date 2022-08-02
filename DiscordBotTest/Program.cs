@@ -4,7 +4,7 @@ using DSharpPlus.CommandsNext;
 
 DiscordConfiguration DSConf = new DiscordConfiguration()
 {
-    Token = Environment.GetEnvironmentVariable("FOO"),
+    Token = Environment.GetEnvironmentVariable("TKNVAR"),
     TokenType = TokenType.Bot
 };
 
