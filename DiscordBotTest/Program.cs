@@ -2,10 +2,9 @@
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 
-var tkn = Environment.GetEnvironmentVariable("TOKENVAR");
 DiscordConfiguration DSConf = new DiscordConfiguration()
 {
-    Token = tkn,
+    Token = Environment.GetEnvironmentVariable("TKNVAR"),
     TokenType = TokenType.Bot
 };
 
@@ -19,7 +18,7 @@ static async Task MainAsync(DiscordConfiguration DSConf)
         CaseSensitive = false
     });
     commands.RegisterCommands<TrainingModule>();
-    commands.RegisterCommands<StaffModule>();
+    //commands.RegisterCommands<StaffModule>();
     await discord.ConnectAsync();
     await Task.Delay(-1);
 }
