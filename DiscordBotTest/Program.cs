@@ -2,8 +2,7 @@
 
 DiscordConfiguration DSConf = new DiscordConfiguration()
 {
-    //Token = Environment.GetEnvironmentVariable("LORDBOTTOKEN"),
-    Token = "Nzc5OTE2NTc2OTc5NDE5MTM2.X7nf6g.24Wlk_i2XXuC1VDVBodKE9WHms8",
+    Token = Environment.GetEnvironmentVariable("LORDBOTTOKEN"),
     TokenType = TokenType.Bot
 };
 
