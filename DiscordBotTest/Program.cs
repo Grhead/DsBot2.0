@@ -2,12 +2,12 @@
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 
+var tkn = Environment.GetEnvironmentVariable("TOKENVAR");
 DiscordConfiguration DSConf = new DiscordConfiguration()
 {
-    Token = Environment.GetEnvironmentVariable("TOKENVAR"),
+    Token = tkn,
     TokenType = TokenType.Bot
 };
-
 
 static async Task MainAsync(DiscordConfiguration DSConf)
 {
