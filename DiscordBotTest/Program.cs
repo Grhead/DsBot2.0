@@ -14,7 +14,7 @@ static async Task MainAsync(DiscordConfiguration DSConf)
     var commands = discord.UseCommandsNext(
     new CommandsNextConfiguration()
     {
-        StringPrefixes = new[] { "!" },
+        StringPrefixes = new[] { "." },
         CaseSensitive = false
     });
     commands.RegisterCommands<TrainingModule>();
